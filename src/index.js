@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
+import { landingTitle } from './landing/landing_seo_content';
 import LandingHeader from './landing/header_component/header_component';
 import LandingBlock from './landing/block_component/block_component';
 import LandingStarter from './landing/starter_component/starter_component';
@@ -13,11 +14,11 @@ class App extends Component {
 
   render() {
     const lightGrey = '#f8f8f8';
-    
+
     return (
       <div>
         <Helmet>
-          <title>Patrycja Stukator</title>
+          <title>{landingTitle}</title>
         </Helmet>
         <LandingHeader />
         <LandingStarter />
