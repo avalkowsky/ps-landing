@@ -1,0 +1,3 @@
+export const blockTitle = 'About';
+export const aboutText = 'Sed interdum, elit eget ultrices rutrum, nunc enim venenatis orci, a pellentesque nunc magna et orci. Aliquam elementum justo vel massa ultrices cursus. Etiam gravida venenatis velit, vel placerat sem volutpat a. Donec at molestie lorem, sed mattis felis. Aenean eu luctus tellus. Nam condimentum, arcu non hendrerit vehicula, urna orci elementum ligula, at fringilla urna quam quis quam. Duis purus justo, tempor ut venenatis non, vestibulum id elit. Pellentesque lacus velit, volutpat semper suscipit ut, congue a sem. Nunc tempus purus tristique lorem consequat, sed semper urna congue.';
+export const aboutWrittenText = '“Never underestimate the power of words to change the way people think and feel.”';
