@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Swipeable from 'react-swipeable'
 import LandingTestimonialBox from './testimonial_box';
 import LandingBlockTitle from '../block_title_component/block_title_component';
 import LandingHandwrittenText from '../handwritten_text_component/handwritten_text_component';
@@ -28,12 +29,17 @@ export default class LandingTestimonials extends Component {
           <div className="row">
             <LandingBlockTitle title={blockTitle} color="black"/>
             <LandingHandwrittenText text={handwrittenText} />
-            <div className="carousel" style={{height: 340}}>
-              {testimonials}
-            </div>
+            <Swipeable
+              onSwipingLeft={() => this.changeTestimonial('prev')}
+              onSwipingRight={() => this.changeTestimonial('next')}
+              >
+              <div className="carousel" style={{height: 340}}>
+                {testimonials}
+              </div>
+            </Swipeable>
             <div className="center">
-              <i className="testimonial-icon small material-icons" onClick={() => this.changeTestimonial('next')}>chevron_left</i>
-              <i className="testimonial-icon small material-icons" onClick={() => this.changeTestimonial('prev')}>chevron_right</i>
+              <i className="testimonial-icon small material-icons" onClick={() => this.changeTestimonial('prev')}>chevron_left</i>
+              <i className="testimonial-icon small material-icons" onClick={() => this.changeTestimonial('next')}>chevron_right</i>
             </div>
           </div>
       );

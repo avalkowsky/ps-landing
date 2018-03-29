@@ -35,7 +35,7 @@ export default class LandingCurriculum extends Component {
                 {educationColumn}
               </div>
               <div className="col s12 m6">
-                <i className="medium material-icons">work</i>
+                <i className="medium material-icons">business_center</i>
                 <LandingBlockTitle title={experienceLabel} color="black" paddings={paddings}/>
                 {experienceColumn}
               </div>

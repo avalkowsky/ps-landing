@@ -9,8 +9,10 @@ import LandingServices from './landing/services_component/services_component';
 import LandingAbout from './landing/about_component/about_component';
 import LandingCurriculum from './landing/curriculum_component/curriculum_component';
 import LandingTestimonials from './landing/testimonials_component/testimonials_component';
+import LandingMail from './landing/mail_component/mail_component';
+import LandingFooter from './landing/footer_component/footer_component';
 
-class App extends Component {
+  class App extends Component {
 
   render() {
     const lightGrey = '#f8f8f8';
@@ -22,10 +24,12 @@ class App extends Component {
         </Helmet>
         <LandingHeader />
         <LandingStarter />
-        <LandingBlock children={<LandingServices />}/>
+        <LandingBlock children={<LandingServices />} htmlId="expandTarget"/>
         <LandingBlock children={<LandingAbout />} backgroundColor={lightGrey}/>
         <LandingBlock children={<LandingCurriculum />}/>
         <LandingBlock children={<LandingTestimonials />} backgroundColor={lightGrey}/>
+        <LandingBlock children={<LandingMail />}/>
+        <LandingFooter />
       </div>
     );
   }

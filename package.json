@@ -32,6 +32,8 @@
     "react-dom": "^15.4.2",
     "react-helmet": "^5.2.0",
     "react-router": "^4.2.0",
-    "react-typist": "^2.0.4"
+    "react-swipeable": "^4.2.1",
+    "react-typist": "^2.0.4",
+    "smoothscroll": "^0.4.0"
   }
 }

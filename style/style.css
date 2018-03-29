@@ -53,3 +53,20 @@
   margin-bottom: 40px;
   width: 96%;
 }
+
+#pseudoParallax {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: 0 -300px;
+  background-attachment: fixed;
+  margin-top: -8px;
+  height: 400px;
+}
+
+@media(max-width: 1157px) {
+  #pseudoParallax {
+    background-size: auto;
+  }
+}

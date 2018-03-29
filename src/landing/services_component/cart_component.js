@@ -6,7 +6,7 @@ export default class ServicesCart extends Component {
       const { icon, title, description } = this.props;
 
         return (
-          <div className="col m4 s4">
+          <div className="col m4 s12">
             <div className="center promo promo-example">
               {icon && <i className="material-icons">{icon}</i>}
               <p className="promo-caption">{title}</p>

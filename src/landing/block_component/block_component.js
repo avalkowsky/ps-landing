@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 export default class LandingBlock extends Component {
 
   render() {
-    const { children, backgroundColor } = this.props;
+    const { children, backgroundColor, htmlId } = this.props;
 
     return (
-      <div className="row" style={{backgroundColor}}>
+      <div className="row" style={{backgroundColor}} id={htmlId}>
         <div style={{paddingTop: 50, paddingBottom: 50}} className="container">
           {children}
         </div>
@@ -21,5 +21,6 @@ LandingBlock.defaultProps = {
 
 LandingBlock.propTypes = {
   children: React.PropTypes.element.isRequired,
-  backgroundColor: React.PropTypes.string
+  backgroundColor: React.PropTypes.string,
+  htmlId: React.PropTypes.string
 };
