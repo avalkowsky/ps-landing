@@ -10,7 +10,7 @@ export default class LandingMail extends Component {
           <div className="row" id="mailForm">
             <LandingBlockTitle title={blockTitle} color="black"/>
             <LandingHandwrittenText text={mailWrittenText} />
-            <form className="col s12">
+            <form className="col s12" id="contactForm" method="POST" action="mailer.php" onSubmit={this.handleSubmit}>
               <div className="row">
                 <div className="input-field col s12">
                   <i className="material-icons prefix">face</i>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Typist from 'react-typist';
+import smoothScroll from 'smoothscroll';
 import parallaxImage from './img/parallax.jpg';
 import LandingBlockTitle from '../block_title_component/block_title_component';
-import { blockTitle, exploreTooltip } from './starter_content';
-import smoothScroll from 'smoothscroll';
+import { blockTitle, exploreTooltip, liveHandwrittenText } from './starter_content';
 
 export default class LandingStarter extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class LandingStarter extends Component {
               <LandingBlockTitle title={blockTitle}/>
               <Typist className="blinking-container">
                 <p className="flow-text">
-                  I Write <b>Beautiful</b> and <b>Unmistakable</b> Text.
+                  {liveHandwrittenText}
                 </p>
               </Typist>
               <a style={{ marginTop: 40, marginBottom: 20 }}

@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "html-react-parser": "^0.4.3",
     "materialize-css": "^0.100.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
