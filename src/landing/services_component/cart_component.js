@@ -19,6 +19,9 @@ export default class ServicesCart extends Component {
 
 ServicesCart.propTypes = {
   title: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired,
+  description: React.PropTypes.oneOfType([
+    React.PropTypes.string.isRequired,
+    React.PropTypes.array.isRequired
+  ]),
   icon: React.PropTypes.string
 };

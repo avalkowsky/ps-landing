@@ -4,4 +4,5 @@ export const addressLabel = 'E-mail address';
 export const messageLabel = 'Mail content';
 export const blockTitle = 'Mail';
 export const mailWrittenText = 'Write anything you want!';
+export const attachFilesTooltip = 'Attach one or many files';
 

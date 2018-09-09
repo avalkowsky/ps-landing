@@ -1,3 +1,8 @@
+"use strict";
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 module.exports = {
   entry: [
     './src/index.js'
@@ -15,21 +20,27 @@ module.exports = {
         presets: ['react', 'es2015', 'stage-1']
       }
     },
-    {
-      test: /\.js$/,
-      loader: 'eslint-loader',
-      exclude: /node_modules/
-    },
-    {
-      test: /\.jpg$/,
-      loader: "url-loader?mimetype=image/jpg" }
+      {
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.jpg$/,
+        loader: "url-loader?mimetype=image/jpg"
+      }
     ]
   },
-resolve: {
+  resolve: {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
+  plugins: [
+    new WebpackCleanupPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+  ]
 };
